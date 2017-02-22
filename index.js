@@ -24,7 +24,6 @@ function practiceMindfulness (dateTime) {
   try {
     mindfulness.observe('breath').count()
   } catch (e) {
-    mindfulness.applyJudgement(null)
     practiceMindfulness(dateTime)
   }
 }
