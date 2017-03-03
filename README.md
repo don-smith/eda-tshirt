@@ -1,6 +1,6 @@
 # EDA t-shirts
 
-The idea is to have some code on the new EDA t-shirts currently being designed. Inspired my [@ahdinosaur](https://github.com/ahdinosaur)'s [dishwashing instructions](dishwashing-instructions.jpg) and this [little snippet](https://gist.github.com/don-smith/4baa0f45c4aebb8418313146c4b37227) I did for an EDA ad image:
+The idea is to have some code on the new EDA t-shirts currently being designed. This is inspired by the [dishwashing instructions](dishwashing-instructions.jpg) from [@ahdinosaur](https://github.com/ahdinosaur) and this [little snippet](https://gist.github.com/don-smith/4baa0f45c4aebb8418313146c4b37227) I did for an EDA ad image:
 
 ```js
 const ids = [4, 9, 1],
