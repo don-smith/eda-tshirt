@@ -3,18 +3,12 @@ const yoga = require('./yoga')('11:50', ['tuesday', 'thursday'])
 const mindfulness = require('./mindfulness')('9:00', 15)
 const pairing = require('./pairing')
 
-const actions = [
-  practiceMindfulness,
-  pairOnDailyExercise,
-  doTheYoga
-]
+const actions = [ practiceMindfulness, pairOnDailyExercise, doTheYoga ]
 
 bowl.on('chime', () => invoke(actions))
 
 function invoke (actions) {
-  actions.forEach(action => {
-    action.invoke(new Date())
-  })
+  actions.forEach(action => action.invoke(new Date()))
 }
 
 function practiceMindfulness (dateTime) {
