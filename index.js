@@ -1,13 +1,11 @@
 const bowl = require('./singing-bowl')
 const yoga = require('./yoga')('11:50', ['tuesday', 'thursday'])
 const mindfulness = require('./mindfulness')('9:00', 15)
-const circle = require('./closing-circle')('17:00')
 const pairing = require('./pairing')
 
 const actions = [
   practiceMindfulness,
   pairOnDailyExercise,
-  closeTheDay,
   doTheYoga
 ]
 
@@ -33,13 +31,6 @@ function pairOnDailyExercise (dateTime) {
   pairing.connect().then(pairing.checkin)
     .then(pairing.randomSelect([pairing.drive, pairing.navigate]))
     .finally(pairing.haveFun)
-}
-
-function closeTheDay (dateTime) {
-  if (!circle.now(dateTime)) return
-  circle.answerQuestion()
-    .then(circle.laugh)
-    .finally(circle.clap)
 }
 
 function doTheYoga (dateTime) {
