@@ -12,4 +12,23 @@ console.info(e())
 
 The idea is that this code should be relevant to the EDA experience ... and fit on a t-shirt.
 
-This is just a first draft and I think is too much code. What should we add/remove? Please send pull requests!
+This is a pretty awesome suggestion from [@richchurcher](https://github.com/richchurcher):
+
+```js
+['diverse', 'mindful', 'creative']
+  .reduce(
+    (means, adj) => means + adj[3], ''
+  )
+  .toUpperCase()
+```
+
+And this is a pretty funny one from [@joshuavial](https://github.com/joshuavial):
+
+```js
+function coffee (cups) {
+  // if (cups > 3) return
+  coffee(++cups)
+}(1)
+```
+
+These are great!
