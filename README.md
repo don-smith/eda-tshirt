@@ -15,11 +15,13 @@ The idea is that this code should be relevant to the EDA experience ... and fit 
 This is a pretty awesome suggestion from [@richchurcher](https://github.com/richchurcher):
 
 ```js
-['diverse', 'mindful', 'creative']
-  .reduce(
-    (means, adj) => means + adj[3], ''
-  )
-  .toUpperCase()
+['diverse',
+ 'mindful',
+ 'creative']
+.reduce(
+  (means, adj) =>
+    means + adj[3], ' '
+).toUpperCase()
 ```
 
 And this is a pretty funny one from [@joshuavial](https://github.com/joshuavial):
